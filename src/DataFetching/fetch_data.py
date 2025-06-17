@@ -83,9 +83,9 @@ class MLBBDataFetcher:
         max_retries (int): Maximum number of retry attempts
     """
     
-    # Class constants (encrypted URL)
-    ENCRYPTED_BASE_URL: str = "gAAAAABnEOc3L3eEhR1g8KYl0QVOX8_X9kJfLB2T7YXv-QzVmH1P2wK8rM3N0pS5tQ4U6V7W8X9Y0Z1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7Q8R9S0T1U2V3W4X5Y6Z7"
-    API_ENDPOINT: str = "gms/source/2669606/2756569"
+    # Class constants (encrypted URL and endpoint)
+    BASE_URL: str = "Z0FBQUFBQm9VWnBveXdRZC0xb3lvUXpSdGxDSFk4RjJ6bllkM19pT0VVQV9SUDNuQVZlaHJkYXZzaWtManVzcG0xSllrNTc3Ul90ZGkwdFFXeFZVYTVaMjI5NG1JSFc0TS1xcmxMVmdYSlEzQ3RMZ1dxcFdaYmdYVFhEdmxBcEd6bkRnZG1OTlVlV20="
+    API_ENDPOINT: str = "Z0FBQUFBQm9VWnV3aldFUExOQThvVlRJWHgyenpkZDJ6STlBYW5uUU94bG9CU0tuN2NFbzUyMEdIb3d4T2ZOdzhYSHE2Z3NEeHhpTnBOeFdkUDJuWmdpSUphN0VGOTJDOTlSRkxmUnB3WW9mZDhYOGsxZnFnOEE9"
     MIN_HERO_ID: int = 1
     MAX_HERO_ID: int = 128
     DEFAULT_PAGE_SIZE: int = 20
@@ -112,8 +112,9 @@ class MLBBDataFetcher:
         
         # Initialize encryption and decrypt URL
         self.encryption_key = self._load_encryption_key()
-        self.base_url = self._decrypt_url()
-        
+        self.base_url = self._decrypt_string(self.BASE_URL)
+        self.api_endpoint = self._decrypt_string(self.API_ENDPOINT)
+
         self.timeout = timeout
         self.max_retries = max_retries
         self.data_directory = Path(data_directory)
@@ -139,9 +140,8 @@ class MLBBDataFetcher:
         
         Returns:
             bytes: Fernet-compatible encryption key
-            
-        Raises:
-            ValueError: If KEY environment variable is not set
+            Raises:
+                ValueError: If KEY environment variable is not set
         """
         key_string = os.getenv('KEY')
         if not key_string:
@@ -159,24 +159,30 @@ class MLBBDataFetcher:
         key = base64.urlsafe_b64encode(kdf.derive(password))
         return key
     
-    def _decrypt_url(self) -> str:
+    def _decrypt_string(self, encrypted_string: str) -> str:
         """
-        Decrypt the base URL using the encryption key.
+        Decrypt an encrypted string using the encryption key.
         
+        Args:
+            encrypted_string (str): The base64 encoded encrypted string.
+
         Returns:
-            str: Decrypted base URL
+            str: Decrypted string
             
         Raises:
             Exception: If decryption fails
         """
         try:
-            # For now, return the actual URL since we need to encrypt it properly first
-            # This is a placeholder - in production, you'd have the actual encrypted URL
-            return "https://api.gms.moontontech.com/api/"
+            fernet = Fernet(self.encryption_key)
+            encrypted_bytes = base64.urlsafe_b64decode(encrypted_string.encode())
+            decrypted_bytes = fernet.decrypt(encrypted_bytes)
+            return decrypted_bytes.decode()
         except Exception as e:
-            self.logger.error(f"Failed to decrypt URL: {str(e)}")
-            raise ValueError("Failed to decrypt API URL. Check your encryption key.")
-    
+            self.logger.error(f"Failed to decrypt string: {str(e)}")
+            # It's good practice to be more specific about the error if possible
+            # For example, distinguish between decoding errors and decryption errors
+            raise ValueError("Failed to decrypt string. Check your encryption key or the encrypted string format.")
+
     @staticmethod
     def encrypt_url(url: str, key: bytes) -> str:
         """
@@ -346,7 +352,7 @@ class MLBBDataFetcher:
         Returns:
             APIResponse: Structured API response
         """
-        url = f"{self.base_url}{self.API_ENDPOINT}"
+        url = f"{self.base_url}{self.api_endpoint}"
         
         # Convert payload to dict for JSON serialization
         payload_dict = {
