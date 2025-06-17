@@ -1,0 +1,278 @@
+{
+  "code": 0,
+  "message": "OK",
+  "data": {
+    "records": [
+      {
+        "_createdAt": 1724837698334,
+        "_id": "66ceef43af5771f18c501334",
+        "_updatedAt": 1750093500775,
+        "data": {
+          "bigrank": "9",
+          "camp_type": "0",
+          "main_hero": {
+            "data": {
+              "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+              "name": "Floryn"
+            }
+          },
+          "main_hero_appearance_rate": 0.010859,
+          "main_hero_ban_rate": 0.856562,
+          "main_hero_channel": {
+            "id": 2678848
+          },
+          "main_hero_win_rate": 0.584282,
+          "main_heroid": 112,
+          "match_type": "0",
+          "sub_hero": [
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4df4ce8528166d6e1cc94480f4f0e910.png"
+                }
+              },
+              "hero_appearance_rate": 0.001676,
+              "hero_channel": {
+                "id": 2667596
+              },
+              "hero_index": 1,
+              "hero_win_rate": 0.42183,
+              "heroid": 2,
+              "increase_win_rate": 0.029392,
+              "min_win_rate10_12": 0.784635,
+              "min_win_rate12_14": 0.71247,
+              "min_win_rate14_16": 0.647372,
+              "min_win_rate16_18": 0.620114,
+              "min_win_rate18_20": 0.590228,
+              "min_win_rate20": 0.537037,
+              "min_win_rate6": 0.976331,
+              "min_win_rate6_8": 0.870849,
+              "min_win_rate8_10": 0.871043
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png"
+                }
+              },
+              "hero_appearance_rate": 0.004779,
+              "hero_channel": {
+                "id": 2678789
+              },
+              "hero_index": 2,
+              "hero_win_rate": 0.412232,
+              "heroid": 53,
+              "increase_win_rate": 0.026504,
+              "min_win_rate10_12": 0.809324,
+              "min_win_rate12_14": 0.736443,
+              "min_win_rate14_16": 0.685883,
+              "min_win_rate16_18": 0.625519,
+              "min_win_rate18_20": 0.569871,
+              "min_win_rate20": 0.495392,
+              "min_win_rate6": 0.816327,
+              "min_win_rate6_8": 0.715556,
+              "min_win_rate8_10": 0.866733
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5f2a9eca0bafd4ed8dc39a93c771b3af.png"
+                }
+              },
+              "hero_appearance_rate": 0.010425,
+              "hero_channel": {
+                "id": 2678806
+              },
+              "hero_index": 3,
+              "hero_win_rate": 0.506182,
+              "heroid": 70,
+              "increase_win_rate": 0.023799,
+              "min_win_rate10_12": 0.664096,
+              "min_win_rate12_14": 0.63644,
+              "min_win_rate14_16": 0.601368,
+              "min_win_rate16_18": 0.570539,
+              "min_win_rate18_20": 0.5439,
+              "min_win_rate20": 0.498148,
+              "min_win_rate6": 0.75,
+              "min_win_rate6_8": 0.686275,
+              "min_win_rate8_10": 0.708756
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png"
+                }
+              },
+              "hero_appearance_rate": 0.00154,
+              "hero_channel": {
+                "id": 2678812
+              },
+              "hero_index": 4,
+              "hero_win_rate": 0.517344,
+              "heroid": 76,
+              "increase_win_rate": 0.022226,
+              "min_win_rate10_12": 0.636714,
+              "min_win_rate12_14": 0.600246,
+              "min_win_rate14_16": 0.60579,
+              "min_win_rate16_18": 0.565195,
+              "min_win_rate18_20": 0.545954,
+              "min_win_rate20": 0.492318,
+              "min_win_rate6": 0.829268,
+              "min_win_rate6_8": 0.510101,
+              "min_win_rate8_10": 0.541126
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d8f170087cb2d5b71bb22a0a4664a927.png"
+                }
+              },
+              "hero_appearance_rate": 0.004406,
+              "hero_channel": {
+                "id": 2678786
+              },
+              "hero_index": 5,
+              "hero_win_rate": 0.525038,
+              "heroid": 50,
+              "increase_win_rate": 0.019379,
+              "min_win_rate10_12": 0.614455,
+              "min_win_rate12_14": 0.602595,
+              "min_win_rate14_16": 0.582802,
+              "min_win_rate16_18": 0.559227,
+              "min_win_rate18_20": 0.519226,
+              "min_win_rate20": 0.493153,
+              "min_win_rate6": 0.790698,
+              "min_win_rate6_8": 0.675,
+              "min_win_rate8_10": 0.679951
+            }
+          ],
+          "sub_hero_last": [
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_ee1c12c84f49514a30e405fb5c617796.png"
+                }
+              },
+              "hero_appearance_rate": 0.004614,
+              "hero_channel": {
+                "id": 2678849
+              },
+              "hero_index": 1,
+              "hero_win_rate": 0.483314,
+              "heroid": 113,
+              "increase_win_rate": -0.040775,
+              "min_win_rate10_12": 0.602637,
+              "min_win_rate12_14": 0.579081,
+              "min_win_rate14_16": 0.561882,
+              "min_win_rate16_18": 0.539667,
+              "min_win_rate18_20": 0.518803,
+              "min_win_rate20": 0.475526,
+              "min_win_rate6": 0.869565,
+              "min_win_rate6_8": 0.651119,
+              "min_win_rate8_10": 0.661143
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png"
+                }
+              },
+              "hero_appearance_rate": 0.003291,
+              "hero_channel": {
+                "id": 2678756
+              },
+              "hero_index": 2,
+              "hero_win_rate": 0.595596,
+              "heroid": 20,
+              "increase_win_rate": -0.030665,
+              "min_win_rate10_12": 0.428734,
+              "min_win_rate12_14": 0.471733,
+              "min_win_rate14_16": 0.4792,
+              "min_win_rate16_18": 0.482134,
+              "min_win_rate18_20": 0.444568,
+              "min_win_rate20": 0.446154,
+              "min_win_rate6": 0.933333,
+              "min_win_rate6_8": 0.435897,
+              "min_win_rate8_10": 0.402847
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png"
+                }
+              },
+              "hero_appearance_rate": 0.004117,
+              "hero_channel": {
+                "id": 2678857
+              },
+              "hero_index": 3,
+              "hero_win_rate": 0.50105,
+              "heroid": 121,
+              "increase_win_rate": -0.030317,
+              "min_win_rate10_12": 0.533368,
+              "min_win_rate12_14": 0.576268,
+              "min_win_rate14_16": 0.582185,
+              "min_win_rate16_18": 0.574785,
+              "min_win_rate18_20": 0.548031,
+              "min_win_rate20": 0.526316,
+              "min_win_rate6": 0.373134,
+              "min_win_rate6_8": 0.381579,
+              "min_win_rate8_10": 0.450747
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9012ee9f73fbb4db4e1953e5fb5172e1.png"
+                }
+              },
+              "hero_appearance_rate": 0.00244,
+              "hero_channel": {
+                "id": 2678858
+              },
+              "hero_index": 4,
+              "hero_win_rate": 0.472546,
+              "heroid": 122,
+              "increase_win_rate": -0.027316,
+              "min_win_rate10_12": 0.595452,
+              "min_win_rate12_14": 0.600058,
+              "min_win_rate14_16": 0.597511,
+              "min_win_rate16_18": 0.579532,
+              "min_win_rate18_20": 0.580972,
+              "min_win_rate20": 0.527563,
+              "min_win_rate6": 0.705882,
+              "min_win_rate6_8": 0.511211,
+              "min_win_rate8_10": 0.565049
+            },
+            {
+              "hero": {
+                "data": {
+                  "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ecfab713c877196d4b9e44a2aa2f6a.png"
+                }
+              },
+              "hero_appearance_rate": 0.0055,
+              "hero_channel": {
+                "id": 2678758
+              },
+              "hero_index": 5,
+              "hero_win_rate": 0.526894,
+              "heroid": 22,
+              "increase_win_rate": -0.025268,
+              "min_win_rate10_12": 0.509441,
+              "min_win_rate12_14": 0.557436,
+              "min_win_rate14_16": 0.588159,
+              "min_win_rate16_18": 0.56529,
+              "min_win_rate18_20": 0.55802,
+              "min_win_rate20": 0.496275,
+              "min_win_rate6": 0.224299,
+              "min_win_rate6_8": 0.295662,
+              "min_win_rate8_10": 0.337554
+            }
+          ]
+        },
+        "id": 103346,
+        "sourceId": 2756569
+      }
+    ],
+    "total": 1
+  }
+}
