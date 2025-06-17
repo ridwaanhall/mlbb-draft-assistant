@@ -82,7 +82,7 @@ def main():
         return
     
     # Original URL to encrypt
-    original_url = ""
+    original_url = "haha"
     
     # Derive encryption key
     encryption_key = derive_key_from_password(key_string)
