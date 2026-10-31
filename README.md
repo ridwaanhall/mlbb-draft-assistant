@@ -2,6 +2,10 @@
 
 A machine learning-powered assistant for Mobile Legends: Bang Bang (MLBB) draft phase. This tool helps you make optimal hero picks based on your team's and the enemy's picks and bans, using real synergy and counter data.
 
+## Available Live Website
+
+https://arena-academy.rone.dev/tools/draft
+
 ## Features
 
 - **Suggests the best heroes to pick** based on current draft state (team picks, bans, enemy picks, bans)
